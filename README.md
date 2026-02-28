@@ -127,11 +127,3 @@ graph TD
     IN_REVIEW --> REJECTED
     IN_REVIEW --> ESCALATED_FURTHER
 ```
-
-## Contributing
-
-Please adhere exactly to JNPI core architecture standards before pushing PRs. All state machine paths must be tested and documented, models validated strictly via Pydantic, and no data destructibility pattern can be deployed without explicit security review.
-
-## License
-
-[Add License Information Here]
