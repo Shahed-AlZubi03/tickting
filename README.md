@@ -8,30 +8,6 @@ This service manages the strict, stateful lifecycle of human-in-the-loop (HITL) 
 - **Migrations**: Alembic
 - **Patterns**: Layered Architecture, Strict FSM, Immutable Audit Logging
 
-## Setup & Local Development
-
-1. Create a virtual environment and install dependencies:
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-2. Configure environment:
-Copy `.env.example` to `.env` and set your specific values.
-
-3. Run migrations and start:
-```bash
-alembic upgrade head
-uvicorn app.main:app --reload
-```
-
-## Testing
-Run the test suite using pytest (uses an isolated SQLite db by default for tests):
-```bash
-pytest tests/
-```
-
 ## API Interfaces
 
 - **`POST /tickets`**: Create a ticket. (Expected by Team 2 - Agent Service payload). Idempotent.
